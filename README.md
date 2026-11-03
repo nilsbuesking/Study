@@ -8,7 +8,7 @@ Personal study texts, read aloud. Currently a private audio feed (unlisted, not 
 |---|---|
 | `content/<text>/chNN.md` | The texts, one Markdown file per chapter (the master copy) |
 | `tools/import_docx.py` | Word file to chapter Markdown (needs pandoc) |
-| `tools/render_audio.py` | Chapter Markdown to m4a with section chapter markers, using Kokoro (British voice `bf_emma`) |
+| `tools/render_audio.py` | Chapter Markdown to m4a with section chapter markers, using Kokoro (British voice `bf_isabella`, German names via `tools/pronunciations.json`) |
 | `tools/pronunciations.json` | Word-to-respelling fixes applied before speech, e.g. German names |
 | `tools/build_feed.py` | Builds `podcast/feed.xml` and the landing page from `podcast/episodes.json` |
 | `podcast/` | What GitHub Pages publishes: feed, cover, audio |
