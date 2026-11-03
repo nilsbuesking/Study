@@ -1,0 +1,3 @@
+podcast/audio/*.wav
+*.ffmeta
+__pycache__/

@@ -1,0 +1,15 @@
+{
+  "title": "Study",
+  "description": "Spoken chapters from my study texts, starting with The Practical Historian.",
+  "author": "Study",
+  "language": "en-gb",
+  "category": "History",
+  "base_url": "https://nilsbuesking.github.io/study/podcast/",
+  "episodes": [
+    {
+      "file": "audio/ch01.m4a",
+      "title": "The Practical Historian 1: The Epistemological Foundation",
+      "description": "Source versus evidence, witting and unwitting testimony, independence, the argument from silence, and what proof means in history."
+    }
+  ]
+}
