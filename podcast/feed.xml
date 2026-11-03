@@ -89,5 +89,16 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>The Practical Historian 8: Research Workflow, with the Coda</title>
+<description>The system that performs all of the above at scale: notes, tools, backup, and the use of IT and AI.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/audio/ch08.m4a" length="11573532" type="audio/x-m4a"/>
+<guid isPermaLink="false">study-ch08</guid>
+<pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:30:24</itunes:duration>
+<itunes:episode>8</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
