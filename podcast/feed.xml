@@ -67,5 +67,16 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>The Practical Historian 6: Working with Historiography</title>
+<description>Reading secondary work as argument, mapping a debate, and positioning a contribution.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/audio/ch06.m4a" length="9473552" type="audio/x-m4a"/>
+<guid isPermaLink="false">study-ch06</guid>
+<pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:24:50</itunes:duration>
+<itunes:episode>6</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
