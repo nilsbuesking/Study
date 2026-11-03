@@ -1,5 +1,23 @@
 {
   "_note": "german: names read with German sound rules inside an English sentence (checked by ear for Isabella: all seven test names good). respell: plain word replacements for anything else.",
-  "german": ["Friedrich", "Engels", "Zinoviev", "Bukharin", "Grigori", "Fraassen", "Bismarck", "Ranke", "Burckhardt", "Meinecke", "Ginzburg"],
+  "german": [
+    "Friedrich",
+    "Engels",
+    "Zinoviev",
+    "Bukharin",
+    "Grigori",
+    "Fraassen",
+    "Bismarck",
+    "Ranke",
+    "Burckhardt",
+    "Meinecke",
+    "Ginzburg",
+    "Paasche",
+    "Laspeyres",
+    "Sönke",
+    "Neitzel",
+    "Ziemann",
+    "Wolff"
+  ],
   "respell": {}
 }

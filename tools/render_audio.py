@@ -9,7 +9,7 @@ from kokoro_onnx import Kokoro
 
 md_path, out_dir, model_dir = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
 voice = sys.argv[4] if len(sys.argv) > 4 else "bf_isabella"
-SR, SKIP = 24000, re.compile(r"further reading", re.I)
+SR, SKIP = 24000, re.compile(r"further reading|glossary", re.I)
 PRON = json.loads((pathlib.Path(__file__).parent / "pronunciations.json").read_text())
 GERMAN = re.compile(r"\b(" + "|".join(map(re.escape, PRON["german"])) + r")('s|\u2019s)?\b")
 NUM = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]

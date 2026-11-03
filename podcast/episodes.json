@@ -10,6 +10,41 @@
       "file": "audio/ch01.m4a",
       "title": "The Practical Historian 1: The Epistemological Foundation",
       "description": "Source versus evidence, witting and unwitting testimony, independence, the argument from silence, and what proof means in history."
+    },
+    {
+      "file": "audio/ch02.m4a",
+      "title": "The Practical Historian 2: Primary Source Analysis by Type",
+      "description": "Reading the diplomatic, official, press, memoir, diary and visual genres against the grain."
+    },
+    {
+      "file": "audio/ch03.m4a",
+      "title": "The Practical Historian 3: Quantitative Methods and Their Limits",
+      "description": "What data is as a source, and what quantitative instincts must be unlearned in the archive."
+    },
+    {
+      "file": "audio/ch04.m4a",
+      "title": "The Practical Historian 4: Essay and Argument Construction",
+      "description": "Thesis, warrant, the paragraph as a move, counterevidence, and the uses of quotation."
+    },
+    {
+      "file": "audio/ch05.m4a",
+      "title": "The Practical Historian 5: Writing, Style, and the Form of Historical Prose",
+      "description": "Prose choices as analytical choices: agency, modality, and the inherited vocabulary."
+    },
+    {
+      "file": "audio/ch06.m4a",
+      "title": "The Practical Historian 6: Working with Historiography",
+      "description": "Reading secondary work as argument, mapping a debate, and positioning a contribution."
+    },
+    {
+      "file": "audio/ch07.m4a",
+      "title": "The Practical Historian 7: Forms of Output: Genre, Constraint, and Assessment",
+      "description": "What each kind of deliverable is for, what makes it good, and how it is judged, including the abstract."
+    },
+    {
+      "file": "audio/ch08.m4a",
+      "title": "The Practical Historian 8: Research Workflow, with the Coda",
+      "description": "The system that performs all of the above at scale: notes, tools, backup, and the use of IT and AI."
     }
   ]
 }
