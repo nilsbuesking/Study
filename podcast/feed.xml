@@ -23,5 +23,16 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>The Practical Historian 2: Primary Source Analysis by Type</title>
+<description>Reading the diplomatic, official, press, memoir, diary and visual genres against the grain.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/audio/ch02.m4a" length="9973036" type="audio/x-m4a"/>
+<guid isPermaLink="false">study-ch02</guid>
+<pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:26:11</itunes:duration>
+<itunes:episode>2</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
