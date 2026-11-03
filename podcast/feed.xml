@@ -56,5 +56,16 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>The Practical Historian 5: Writing, Style, and the Form of Historical Prose</title>
+<description>Prose choices as analytical choices: agency, modality, and the inherited vocabulary.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/audio/ch05.m4a" length="9166138" type="audio/x-m4a"/>
+<guid isPermaLink="false">study-ch05</guid>
+<pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:24:00</itunes:duration>
+<itunes:episode>5</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
