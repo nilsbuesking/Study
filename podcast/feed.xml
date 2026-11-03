@@ -34,5 +34,16 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>The Practical Historian 3: Quantitative Methods and Their Limits</title>
+<description>What data is as a source, and what quantitative instincts must be unlearned in the archive.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/audio/ch03.m4a" length="10205431" type="audio/x-m4a"/>
+<guid isPermaLink="false">study-ch03</guid>
+<pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:26:42</itunes:duration>
+<itunes:episode>3</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
