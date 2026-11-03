@@ -15,7 +15,7 @@ Personal study texts, read aloud. Currently a private audio feed (unlisted, not 
 
 ## Listening
 
-Open `https://nilsbuesking.github.io/study/podcast/` on the iPhone for the feed address, then Apple Podcasts: Library, the ⋯ menu, Follow a Show by URL.
+Open `https://nilsbuesking.github.io/Study/podcast/` on the iPhone for the feed address, then Apple Podcasts: Library, the ⋯ menu, Follow a Show by URL.
 
 ## Adding a chapter
 
