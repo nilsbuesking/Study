@@ -8,7 +8,7 @@ from xml.sax.saxutils import escape
 root = pathlib.Path(__file__).resolve().parent.parent / "podcast"
 cfg = json.loads((root / "episodes.json").read_text(encoding="utf-8"))
 BASE = cfg["base_url"].rstrip("/") + "/"
-start = dt.datetime(2026, 11, 3, 12, 0, tzinfo=dt.timezone.utc)
+start = dt.datetime(2026, 10, 1, 12, 0, tzinfo=dt.timezone.utc)  # well in the past: apps hide future-dated episodes
 
 items = []
 for n, ep in enumerate(cfg["episodes"], 1):
@@ -23,11 +23,11 @@ for n, ep in enumerate(cfg["episodes"], 1):
 
 x = lambda s: escape(s, {'"': "&quot;"})
 rss = ['<?xml version="1.0" encoding="UTF-8"?>',
-       '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">',
-       "<channel>", f"<title>{x(cfg['title'])}</title>", f"<link>{BASE}</link>", f"<language>{cfg['language']}</language>",
+       '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">',
+       "<channel>", f'<atom:link href="{BASE}feed.xml" rel="self" type="application/rss+xml"/>', f"<title>{x(cfg['title'])}</title>", f"<link>{BASE}</link>", f"<language>{cfg['language']}</language>",
        f"<description>{x(cfg['description'])}</description>", f"<itunes:author>{x(cfg['author'])}</itunes:author>",
        f"<itunes:summary>{x(cfg['description'])}</itunes:summary>", '<itunes:type>serial</itunes:type>',
-       "<itunes:explicit>false</itunes:explicit>", "<itunes:block>Yes</itunes:block>",
+       "<itunes:explicit>false</itunes:explicit>",
        f'<itunes:image href="{BASE}cover.jpg"/>', f'<itunes:category text="{x(cfg["category"])}"/>']
 for ep in items:
     pub = email.utils.format_datetime(start + dt.timedelta(days=ep["n"]))
