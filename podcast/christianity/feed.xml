@@ -133,5 +133,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>11. Donatism, North Africa, and the Politics of Purity</title>
+<description>North Africa and the Church Before the Schism; The Traditores and the Succession Dispute; Constantine and the Failure of Imperial Settlement; The Circumcellions: Class, Violence, and the Limits of Ecclesiastical Control; Augustine and the Turn to Coercion.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch11.m4a" length="5776066" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch11</guid>
+<pubDate>Sun, 04 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:15:07</itunes:duration>
+<itunes:season>3</itunes:season>
+<itunes:episode>11</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
