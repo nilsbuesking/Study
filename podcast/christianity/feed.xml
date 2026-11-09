@@ -193,5 +193,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>16. Monasticism: Benedict, the Desert Fathers, and the Shaping of Western Christendom</title>
+<description>The Impulse and Its Context; The Desert Fathers: Egypt and the Anachoretic Tradition; Pachomius and the Cenobitic Alternative; Basil and the Eastern Synthesis; Benedict of Nursia and the Western Synthesis; The Political Economy of Monasticism; Monasticism and the Transmission of Knowledge.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch16.m4a" length="6983024" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch16</guid>
+<pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:18:20</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>16</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
