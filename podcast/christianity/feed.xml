@@ -385,5 +385,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>32. Witch Hunts: Theology, Society, and Early Modern Persecution</title>
+<description>The Historiographical Problem; The Theological Framework: What Made Witch Belief Possible; The Mechanics of Persecution: Courts, Confessions, and Chain Reactions; Geography and Confession: Who Persecuted Most, and Why; Possession, Exorcism, and the Demonological Precondition; The Decline of the Witch Trials.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch32.m4a" length="7776451" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch32</guid>
+<pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:20:19</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>32</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
