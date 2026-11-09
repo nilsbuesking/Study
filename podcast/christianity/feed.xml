@@ -121,5 +121,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>10. Constantine, Nicaea, and the Arian Controversy</title>
+<description>Constantine: The Conversion and Its Historiographical Problems; The Church After Toleration: A New Set of Problems; Arius and the Controversy Before Nicaea; The Council of Nicaea, 325; The Long Aftermath: Arianism After Nicaea.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch10.m4a" length="7294467" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch10</guid>
+<pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:19:06</itunes:duration>
+<itunes:season>3</itunes:season>
+<itunes:episode>10</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
