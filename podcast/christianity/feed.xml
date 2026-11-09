@@ -85,5 +85,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>7. Core Doctrine III: Sin, Grace, Purgatory, and the Afterlife</title>
+<description>Original Sin: A Doctrine and Its Disputed Foundations; Grace, Merit, and the Larger Western Synthesis; Purgatory: Origins and Function; Heaven, Hell, and the Wider Eschatological Picture; Angels: The Celestial Hierarchy; The Devil: From Adversary to Cosmic Enemy.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch07.m4a" length="9758046" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch07</guid>
+<pubDate>Sat, 03 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:25:26</itunes:duration>
+<itunes:season>2</itunes:season>
+<itunes:episode>7</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
