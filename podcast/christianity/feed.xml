@@ -265,5 +265,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>22. Heresy and Repression: Cathars, the Albigensian Crusade, and the Inquisition</title>
+<description>The Cathar Movement: What It Was and What It Was Not; The Political Geography of the Languedoc; The Inquisition: Origins, Methods, and Realities; The Destruction of Catharism and Its Lessons.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch22.m4a" length="6666928" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch22</guid>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:17:25</itunes:duration>
+<itunes:season>5</itunes:season>
+<itunes:episode>22</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
