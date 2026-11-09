@@ -361,5 +361,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>30. The English Reformation: A State Church by Royal Decree</title>
+<description>The Preconditions: Lollardy, Humanism, and Anti-Clericalism; Henry VIII: Jurisdiction, Marriage, and the Break with Rome; The Dissolution of the Monasteries and the Pilgrimage of Grace; Edward, Mary, and the Instability of Settlement; Cranmer, the Prayer Book, and the Shaping of Anglican Culture; The Long-Term Character of English Christianity.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch30.m4a" length="6273905" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch30</guid>
+<pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:16:29</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>30</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
