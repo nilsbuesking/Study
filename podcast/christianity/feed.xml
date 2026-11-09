@@ -469,5 +469,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>39. Vatican II and Liberation Theology: The Church Reforms and Radicalises</title>
+<description>The Rupture with the Tridentine Settlement; The Council's Achievements; The Post-Conciliar Tension: Reception and Resistance; Liberation Theology: The Preferential Option in Practice; Nostra Aetate, Antisemitism, and the Unfinished Reckoning; The Francis Pontificate and the Council's Contested Legacy.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch39.m4a" length="6482319" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch39</guid>
+<pubDate>Sun, 11 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:17:00</itunes:duration>
+<itunes:season>8</itunes:season>
+<itunes:episode>39</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
