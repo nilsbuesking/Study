@@ -229,5 +229,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>19. The Filioque, Rome versus Constantinople, and the Schism of 1054</title>
+<description>A Schism in Slow Motion; The Filioque: A Theological Dispute and Its History; Diverging Ecclesiologies: The Structural Incompatibility; The Photian Schism and the Ninth-Century Crisis; 1054: The Trigger and Its Limits; The Fourth Crusade's Shadow: 1204 and the Real Wound.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch19.m4a" length="6812355" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch19</guid>
+<pubDate>Tue, 06 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:17:51</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>19</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
