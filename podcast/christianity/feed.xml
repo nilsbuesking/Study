@@ -397,5 +397,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>33. The Wars of Religion and the Peace of Westphalia</title>
+<description>The Confessionalisation of Violence; The French Wars of Religion; The Thirty Years War: Europe's Catastrophe; The Peace of Westphalia and Its Mythology; The Legacy for Christianity.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch33.m4a" length="6137829" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch33</guid>
+<pubDate>Fri, 09 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:16:05</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>33</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
