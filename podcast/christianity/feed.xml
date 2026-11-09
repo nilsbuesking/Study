@@ -445,5 +445,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>37. The Churches and the World Wars: Complicity, Resistance, and the Reichskonkordat</title>
+<description>Christianity and the First World War; The Reichskonkordat and the German Churches; Bonhoeffer, the Resistance, and the Martyrs; Pius XII and the Holocaust: A Reckoning; The Church of the East: The Assyrian Genocide and Modern Remnant; The Long Reckoning.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch37.m4a" length="7566258" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch37</guid>
+<pubDate>Sat, 10 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:19:43</itunes:duration>
+<itunes:season>8</itunes:season>
+<itunes:episode>37</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
