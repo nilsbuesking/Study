@@ -373,5 +373,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>31. The Catholic Counter-Reformation: Trent, the Jesuits, and Discipline Restored</title>
+<description>Naming the Movement; The Council of Trent: Reform and Definition; Ignatius of Loyola and the Society of Jesus; The Spanish Inquisition; The Tridentine Settlement and Its Long Shadow.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch31.m4a" length="7014844" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch31</guid>
+<pubDate>Fri, 09 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:18:22</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>31</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
