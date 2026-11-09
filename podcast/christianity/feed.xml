@@ -289,5 +289,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>24. The Church and the Jews: The Origins of Institutional Christian Antisemitism</title>
+<description>Framing: Theology, History, and Moral Responsibility; The Patristic Roots: Supersessionism and the Adversus Judaeos Tradition; The Charge of Deicide and Its Consequences; The Institutional Architecture of Mediaeval Jewish Subjugation; The Black Death and the Accusations of Well-Poisoning; Forward Threads: Luther and the Holocaust.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch24.m4a" length="7626622" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch24</guid>
+<pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:19:52</itunes:duration>
+<itunes:season>5</itunes:season>
+<itunes:episode>24</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
