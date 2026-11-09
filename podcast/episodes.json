@@ -1,10 +1,11 @@
 {
-  "title": "Study",
-  "description": "Spoken chapters from my study texts, starting with The Practical Historian.",
+  "title": "The Practical Historian",
+  "description": "A spoken handbook of historical method: sources and evidence, argument and prose, historiography, forms of output, and research workflow.",
   "author": "Study",
   "language": "en-gb",
   "category": "History",
   "base_url": "https://nilsbuesking.github.io/Study/podcast/",
+  "guid_prefix": "study",
   "episodes": [
     {
       "file": "audio/ch01.m4a",

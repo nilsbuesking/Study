@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <atom:link href="https://nilsbuesking.github.io/Study/podcast/feed.xml" rel="self" type="application/rss+xml"/>
-<title>Study</title>
+<title>The Practical Historian</title>
 <link>https://nilsbuesking.github.io/Study/podcast/</link>
 <language>en-gb</language>
-<description>Spoken chapters from my study texts, starting with The Practical Historian.</description>
+<description>A spoken handbook of historical method: sources and evidence, argument and prose, historiography, forms of output, and research workflow.</description>
 <itunes:author>Study</itunes:author>
-<itunes:summary>Spoken chapters from my study texts, starting with The Practical Historian.</itunes:summary>
+<itunes:summary>A spoken handbook of historical method: sources and evidence, argument and prose, historiography, forms of output, and research workflow.</itunes:summary>
 <itunes:type>serial</itunes:type>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://nilsbuesking.github.io/Study/podcast/cover.jpg"/>

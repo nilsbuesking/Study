@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="https://nilsbuesking.github.io/Study/podcast/christianity/feed.xml" rel="self" type="application/rss+xml"/>
+<title>A History of Christianity</title>
+<link>https://nilsbuesking.github.io/Study/podcast/christianity/</link>
+<language>en-gb</language>
+<description>A spoken history of Christianity in forty chapters, from Second Temple Judaism and the historical Jesus to the present: doctrine, heresy and empire, East and West, medieval Christendom, Reformation, mission and empire, and the twentieth century. Seasons follow the eight Parts; the annexes on saints and holidays are bonus episodes.</description>
+<itunes:author>Study</itunes:author>
+<itunes:summary>A spoken history of Christianity in forty chapters, from Second Temple Judaism and the historical Jesus to the present: doctrine, heresy and empire, East and West, medieval Christendom, Reformation, mission and empire, and the twentieth century. Seasons follow the eight Parts; the annexes on saints and holidays are bonus episodes.</itunes:summary>
+<itunes:type>serial</itunes:type>
+<itunes:explicit>false</itunes:explicit>
+<itunes:image href="https://nilsbuesking.github.io/Study/podcast/christianity/cover.jpg"/>
+<itunes:category text="History"/>
+<itunes:subtitle>From the Second Temple to the Present</itunes:subtitle>
+</channel>
+</rss>

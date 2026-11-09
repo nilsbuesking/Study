@@ -1,0 +1,274 @@
+{
+  "title": "A History of Christianity",
+  "subtitle": "From the Second Temple to the Present",
+  "description": "A spoken history of Christianity in forty chapters, from Second Temple Judaism and the historical Jesus to the present: doctrine, heresy and empire, East and West, medieval Christendom, Reformation, mission and empire, and the twentieth century. Seasons follow the eight Parts; the annexes on saints and holidays are bonus episodes.",
+  "author": "Study",
+  "language": "en-gb",
+  "category": "History",
+  "base_url": "https://nilsbuesking.github.io/Study/podcast/christianity/",
+  "guid_prefix": "christianity",
+  "pub_step_hours": 6,
+  "episodes": [
+    {
+      "file": "audio/ch01.m4a",
+      "title": "1. Second Temple Judaism and the Historical Jesus: What Can Be Known",
+      "description": "The Problem of Sources; Methods and Their Limits; Second Temple Judaism: The World Jesus Inhabited; Jesus of Nazareth: A Sketch Within the Evidence.",
+      "season": 1
+    },
+    {
+      "file": "audio/ch02.m4a",
+      "title": "2. Paul, the Gentile Mission, and the Earliest Communities",
+      "description": "The Earliest Jerusalem Community; Saul of Tarsus; The Gentile Mission and Its Theological Logic; The Shape of the Pauline Mission.",
+      "season": 1
+    },
+    {
+      "file": "audio/ch03.m4a",
+      "title": "3. Persecution, Apologetics, and the Church Within the Roman Empire",
+      "description": "A Movement Without Legal Standing; The Pattern of Persecution: Local, Sporadic, and Later Systematic; The Apologists: Defending the Faith to a Hostile World; Institutional Consolidation Under Pressure; The Martyr's Grave and the Origins of the Cult of Saints.",
+      "season": 1
+    },
+    {
+      "file": "audio/ch04.m4a",
+      "title": "4. Scripture, Canon, and Authority: How the Bible Took Shape",
+      "description": "The Hebrew Bible and the Question of \"Old Testament\"; The Formation of the New Testament Canon; Canon, Authority, and the Question Reformation Would Later Reopen; Textual Transmission: How the Words Themselves Survived.",
+      "season": 2
+    },
+    {
+      "file": "audio/ch05.m4a",
+      "title": "5. Core Doctrine I: God, Trinity, Incarnation, and Salvation",
+      "description": "Monotheism Under Pressure: The Problem the Doctrine of the Trinity Solves; The Vocabulary of Trinitarian Definition; The Incarnation: God Become Human; Soteriology: How Does Christ's Death and Resurrection Save?.",
+      "season": 2
+    },
+    {
+      "file": "audio/ch06.m4a",
+      "title": "6. Core Doctrine II: Sacraments, the Eucharist, and Transubstantiation",
+      "description": "What a Sacrament Is; Baptism: Incorporation and Cleansing; The Eucharist: Institution and Early Understanding; Transubstantiation: The Aristotelian Framework.",
+      "season": 2
+    },
+    {
+      "file": "audio/ch07.m4a",
+      "title": "7. Core Doctrine III: Sin, Grace, Purgatory, and the Afterlife",
+      "description": "Original Sin: A Doctrine and Its Disputed Foundations; Grace, Merit, and the Larger Western Synthesis; Purgatory: Origins and Function; Heaven, Hell, and the Wider Eschatological Picture; Angels: The Celestial Hierarchy; The Devil: From Adversary to Cosmic Enemy.",
+      "season": 2
+    },
+    {
+      "file": "audio/ch08.m4a",
+      "title": "8. Church, Hierarchy, and Authority: Bishops, Councils, and Apostolic Succession",
+      "description": "From Plural Leadership to Monepiscopacy; Apostolic Succession: The Theological Claim; Councils: Conciliar Authority and Its Theory; The Petrine Claim and the Question of Roman Primacy.",
+      "season": 2
+    },
+    {
+      "file": "audio/ch09.m4a",
+      "title": "9. Gnosticism, Marcion, and the Definition of Orthodoxy",
+      "description": "The Problem of Naming; The Nag Hammadi Library and What It Changed; Marcion: A Distinct Case; Irenaeus and the Construction of Orthodoxy; The Limits of Repression and the Persistence of Gnosis.",
+      "season": 3
+    },
+    {
+      "file": "audio/ch10.m4a",
+      "title": "10. Constantine, Nicaea, and the Arian Controversy",
+      "description": "Constantine: The Conversion and Its Historiographical Problems; The Church After Toleration: A New Set of Problems; Arius and the Controversy Before Nicaea; The Council of Nicaea, 325; The Long Aftermath: Arianism After Nicaea.",
+      "season": 3
+    },
+    {
+      "file": "audio/ch11.m4a",
+      "title": "11. Donatism, North Africa, and the Politics of Purity",
+      "description": "North Africa and the Church Before the Schism; The Traditores and the Succession Dispute; Constantine and the Failure of Imperial Settlement; The Circumcellions: Class, Violence, and the Limits of Ecclesiastical Control; Augustine and the Turn to Coercion.",
+      "season": 3
+    },
+    {
+      "file": "audio/ch12.m4a",
+      "title": "12. Augustine versus Pelagius: Grace, Free Will, and a Political Church",
+      "description": "Augustine of Hippo: The Mind Behind the Controversy; The Question of Free Will: Setting Up the Problem; Pelagius: The Position and Its Appeal; Augustine's Response: Grace, Predestination, and the Bound Will; The Political Dimension: From Theological Dispute to Imperial Condemnation; The Augustinian Legacy and Its Ambivalence.",
+      "season": 3
+    },
+    {
+      "file": "audio/ch13.m4a",
+      "title": "13. Nestorius, Cyril, and the Christological Wars: The Road to Ephesus",
+      "description": "Two Schools and Their Different Instincts; Nestorius: The Man and the Controversy; Cyril of Alexandria: Theology and Power; The Council of Ephesus, 431: Procedure as Weapon; The Theological Residue of Ephesus.",
+      "season": 3
+    },
+    {
+      "file": "audio/ch14.m4a",
+      "title": "14. Chalcedon and the Making of the Miaphysite Churches",
+      "description": "The Problem Ephesus Left Unsolved; Leo's Tome and the Western Position; The Council of Chalcedon, 451; The Miaphysite Rejection and the Permanent Schism.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch15.m4a",
+      "title": "15. Global Spread, Phase One: Byzantium, Armenia, Ethiopia, and the Church of the East to China",
+      "description": "Christianity as a Multipolar Phenomenon; Byzantium: The Christian Empire of the East; Armenia: The First Christian Nation; Ethiopia: Christianity in the Kingdom of Aksum; The Church of the East: Christianity Beyond Rome; The Significance of This Diversity.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch16.m4a",
+      "title": "16. Monasticism: Benedict, the Desert Fathers, and the Shaping of Western Christendom",
+      "description": "The Impulse and Its Context; The Desert Fathers: Egypt and the Anachoretic Tradition; Pachomius and the Cenobitic Alternative; Basil and the Eastern Synthesis; Benedict of Nursia and the Western Synthesis; The Political Economy of Monasticism; Monasticism and the Transmission of Knowledge.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch17.m4a",
+      "title": "17. Conversion of the North: Franks, Anglo-Saxons, and the Carolingian Church",
+      "description": "Conversion as Political Event; Clovis and the Frankish Conversion; Ireland and the Peregrini: Monasticism as Mission; The Anglo-Saxon Mission and the Roman Model; Charlemagne and the Carolingian Church.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch18.m4a",
+      "title": "18. Iconoclasm and the Byzantine Crisis",
+      "description": "Images and Their Contested Place in Christian Devotion; The Origins of Imperial Iconoclasm; The Course of the Controversy; Monasticism, Resistance, and the Reconfiguration of Authority; Iconoclasm and the Estrangement of Rome.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch19.m4a",
+      "title": "19. The Filioque, Rome versus Constantinople, and the Schism of 1054",
+      "description": "A Schism in Slow Motion; The Filioque: A Theological Dispute and Its History; Diverging Ecclesiologies: The Structural Incompatibility; The Photian Schism and the Ninth-Century Crisis; 1054: The Trigger and Its Limits; The Fourth Crusade's Shadow: 1204 and the Real Wound.",
+      "season": 4
+    },
+    {
+      "file": "audio/ch20.m4a",
+      "title": "20. Gregorian Reform and the Investiture Controversy: Church versus Empire",
+      "description": "The Problem of a Church Embedded in Feudal Power; Cluny and the Monastic Origins of Reform; Leo IX and the Reform Papacy; Gregory VII: The Theology of Reform; The Investiture Contest: Henry IV and the Road to Canossa; The Longer Consequences.",
+      "season": 5
+    },
+    {
+      "file": "audio/ch21.m4a",
+      "title": "21. The Crusades: Origins, Aims, and the Sack of Constantinople",
+      "description": "What Were the Crusades?; The Background: Holy War, Pilgrimage, and the Devotional World; Urban II at Clermont, 1095: The Appeal and Its Ambiguities; The First Crusade and Jerusalem's Fall: 1096–1099; Bernard of Clairvaux: The Conscience of the Twelfth Century; Saladin, the Loss of Jerusalem, and the Later Crusades; The Anti-Jewish Violence of the Crusades; The Crusades in Historical Perspective.",
+      "season": 5
+    },
+    {
+      "file": "audio/ch22.m4a",
+      "title": "22. Heresy and Repression: Cathars, the Albigensian Crusade, and the Inquisition",
+      "description": "The Cathar Movement: What It Was and What It Was Not; The Political Geography of the Languedoc; The Inquisition: Origins, Methods, and Realities; The Destruction of Catharism and Its Lessons.",
+      "season": 5
+    },
+    {
+      "file": "audio/ch23.m4a",
+      "title": "23. Scholasticism: Aquinas and the Marriage of Faith and Reason",
+      "description": "The Institutional Revolution: The Rise of the Universities; The Recovery of Aristotle and Its Consequences; Thomas Aquinas: The Synthesis; The Condemnations of 1277 and the Limits of Synthesis.",
+      "season": 5
+    },
+    {
+      "file": "audio/ch24.m4a",
+      "title": "24. The Church and the Jews: The Origins of Institutional Christian Antisemitism",
+      "description": "Framing: Theology, History, and Moral Responsibility; The Patristic Roots: Supersessionism and the Adversus Judaeos Tradition; The Charge of Deicide and Its Consequences; The Institutional Architecture of Mediaeval Jewish Subjugation; The Black Death and the Accusations of Well-Poisoning; Forward Threads: Luther and the Holocaust.",
+      "season": 5
+    },
+    {
+      "file": "audio/ch25.m4a",
+      "title": "25. Avignon, Schism, and the Conciliar Crisis",
+      "description": "The Road to Avignon: Boniface VIII and the Overreach of Papal Power; Avignon: The Captive Papacy?; The Great Western Schism: Three Popes and a Broken Church; The Conciliar Movement: A Constitutional Theory of Church Governance; Jan Hus and the Council's Moral Failure; The Conciliar Movement's Defeat and Its Consequences.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch26.m4a",
+      "title": "26. Heresy Before Luther: Wycliffe, Hus, and the Limits of Dissent",
+      "description": "Why These Movements Matter; John Wycliffe: Scripture, Dominion, and the Attack on the Church; Jan Hus: Bohemia and the Politicisation of Reform; Why the Limits Held — And Why They Would Not Hold for Luther.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch27.m4a",
+      "title": "27. Luther, the Ninety-Five Theses, and the Theological Break",
+      "description": "The Man and His Formation; The Indulgence Controversy and the Ninety-Five Theses; The Theological Core: Justification by Faith Alone; Sola Scriptura and the Bondage of the Will; The Diet of Worms and the Point of No Return; Luther and the Jews: The Threading Commitment.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch28.m4a",
+      "title": "28. The Political Reformation: Princes, Peasants, and the Fragmentation of Christendom",
+      "description": "The Reformation as Political Event; The Knights' Revolt and Its Lessons; The Peasants' War: 1524–1525; The Princes' Reformation: Territorial Adoption and the Emergence of Lutheran Churches; The Diet of Speyer and the Name \"Protestant\"; The Peace of Augsburg, 1555, and Cuius Regio Eius Religio; The Radical Reformation: Anabaptists and the Left Wing.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch29.m4a",
+      "title": "29. Calvin, Zwingli, and the Reformed Tradition",
+      "description": "Zwingli: The Swiss Reformation and Its Distinct Character; The Marburg Colloquy and the Eucharistic Division; John Calvin: Theology and Institution; Geneva as Laboratory: Discipline, Consistory, and Christian Society; The International Spread of Calvinism.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch30.m4a",
+      "title": "30. The English Reformation: A State Church by Royal Decree",
+      "description": "The Preconditions: Lollardy, Humanism, and Anti-Clericalism; Henry VIII: Jurisdiction, Marriage, and the Break with Rome; The Dissolution of the Monasteries and the Pilgrimage of Grace; Edward, Mary, and the Instability of Settlement; Cranmer, the Prayer Book, and the Shaping of Anglican Culture; The Long-Term Character of English Christianity.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch31.m4a",
+      "title": "31. The Catholic Counter-Reformation: Trent, the Jesuits, and Discipline Restored",
+      "description": "Naming the Movement; The Council of Trent: Reform and Definition; Ignatius of Loyola and the Society of Jesus; The Spanish Inquisition; The Tridentine Settlement and Its Long Shadow.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch32.m4a",
+      "title": "32. Witch Hunts: Theology, Society, and Early Modern Persecution",
+      "description": "The Historiographical Problem; The Theological Framework: What Made Witch Belief Possible; The Mechanics of Persecution: Courts, Confessions, and Chain Reactions; Geography and Confession: Who Persecuted Most, and Why; Possession, Exorcism, and the Demonological Precondition; The Decline of the Witch Trials.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch33.m4a",
+      "title": "33. The Wars of Religion and the Peace of Westphalia",
+      "description": "The Confessionalisation of Violence; The French Wars of Religion; The Thirty Years War: Europe's Catastrophe; The Peace of Westphalia and Its Mythology; The Legacy for Christianity.",
+      "season": 6
+    },
+    {
+      "file": "audio/ch34.m4a",
+      "title": "34. Mission and Empire: Christianity in the Americas, Africa, and Asia",
+      "description": "The Inseparability of Mission and Empire; The Americas: Conquest, Conversion, and Catastrophe; Africa: Coastal Mission, Slavery, and the Interior; Asia: Ricci, the Chinese Rites, and the Limits of Accommodation; The Structural Legacy.",
+      "season": 7
+    },
+    {
+      "file": "audio/ch35.m4a",
+      "title": "35. The Churches and Slavery: Complicity and Abolition",
+      "description": "The Scale of the Crime and the Church's Involvement; Institutional Entanglement: Churches as Slaveholders; The Abolition Movement: Christians as Agents of Change; The Theological Reckoning.",
+      "season": 7
+    },
+    {
+      "file": "audio/ch36.m4a",
+      "title": "36. Faith Under Siege: Enlightenment Critique, Vatican I, and the Church Against Modernity",
+      "description": "The Enlightenment Challenge: What It Actually Was; The Church's Responses: Reform, Retreat, and Reaction; Darwin and the Churches; Vatican I: Papal Infallibility and Its Context; Catholic Modernism and Its Condemnation.",
+      "season": 7
+    },
+    {
+      "file": "audio/ch37.m4a",
+      "title": "37. The Churches and the World Wars: Complicity, Resistance, and the Reichskonkordat",
+      "description": "Christianity and the First World War; The Reichskonkordat and the German Churches; Bonhoeffer, the Resistance, and the Martyrs; Pius XII and the Holocaust: A Reckoning; The Church of the East: The Assyrian Genocide and Modern Remnant; The Long Reckoning.",
+      "season": 8
+    },
+    {
+      "file": "audio/ch38.m4a",
+      "title": "38. Decolonisation and the New Centre of Gravity: Global South Christianity and the Rise of Pentecostalism",
+      "description": "The Demographic Revolution; African Christianity After Colonialism; Latin American Christianity: Liberation and Pentecost; Pentecostalism as a Global Phenomenon; The Church of the East: Final Thread; The World Christianity Paradigm.",
+      "season": 8
+    },
+    {
+      "file": "audio/ch39.m4a",
+      "title": "39. Vatican II and Liberation Theology: The Church Reforms and Radicalises",
+      "description": "The Rupture with the Tridentine Settlement; The Council's Achievements; The Post-Conciliar Tension: Reception and Resistance; Liberation Theology: The Preferential Option in Practice; Nostra Aetate, Antisemitism, and the Unfinished Reckoning; The Francis Pontificate and the Council's Contested Legacy.",
+      "season": 8
+    },
+    {
+      "file": "audio/ch40.m4a",
+      "title": "40. Reckoning: The Abuse Crisis, Secularisation, and Christianity's Global Picture Today",
+      "description": "The Abuse Crisis: Institutional Failure and Its Roots; The Institutional Logic and the Theological Cost; Secularisation: The European Story and Its Limits; American Evangelical Christianity and the Political Turn; Women in the Catholic Church: Ordination, Equality, and the Legal Tension; Christianity's Global Picture: A Stocktaking.",
+      "season": 8
+    },
+    {
+      "file": "audio/annex-a.m4a",
+      "title": "Annex A: The Saints — A Reference Guide",
+      "description": "What a saint is and how the cult of saints arose; the apostolic, patristic, medieval, Reformation-era and modern saints; the patron saints.",
+      "season": 9,
+      "type": "bonus"
+    },
+    {
+      "file": "audio/annex-c1.m4a",
+      "title": "Annex C, part one: Christian Holidays — the Easter Cycle",
+      "description": "Christian holidays in England, Ireland and Germany: the moveable feasts from Shrove Tuesday and Fastnacht to Pentecost, Trinity Sunday and Corpus Christi.",
+      "season": 9,
+      "type": "bonus"
+    },
+    {
+      "file": "audio/annex-c2.m4a",
+      "title": "Annex C, part two: Christian Holidays — the Christmas Cycle and Other Feasts",
+      "description": "The fixed feasts: Advent, St Nicholas, Christmas, Epiphany, Candlemas, the Assumption, All Saints and All Souls, Christ the King; and a note on denominational variation.",
+      "season": 9,
+      "type": "bonus"
+    }
+  ]
+}

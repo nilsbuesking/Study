@@ -2,75 +2,160 @@
 Usage: python3 tools/render_audio.py <chapter.md> <out_dir> <model_dir> [voice]
 Model files: kokoro-v1.0.onnx and voices-v1.0.bin in <model_dir>
 (from https://github.com/thewh1teagle/kokoro-onnx/releases, model-files-v1.0).
-Spoken text rules live in speakable(); respellings in tools/pronunciations.json."""
+
+Markdown: "# Part …" lines are announced before the next heading; "# X — Y" is spoken "X. Y";
+"## 1.2 Title" is spoken "Section one point two. Title."; other "##" headings are spoken as they stand.
+Spoken-text rules live in speakable(). Words that need another language's sound rules are listed in
+tools/pronunciations.json plus an optional pronunciations.json next to the chapter: "de" (or "german")
+for German, "la" for Classical Latin; "respell" maps words to English respellings."""
 import json, os, pathlib, re, subprocess, sys, time
-import numpy as np, soundfile as sf
+import numpy as np, soundfile as sf, phonemizer
 from kokoro_onnx import Kokoro
 
 md_path, out_dir, model_dir = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
 voice = sys.argv[4] if len(sys.argv) > 4 else "bf_isabella"
 SR, SKIP = 24000, re.compile(r"further reading|glossary", re.I)
-PRON = json.loads((pathlib.Path(__file__).parent / "pronunciations.json").read_text())
-GERMAN = re.compile(r"\b(" + "|".join(map(re.escape, PRON["german"])) + r")('s|\u2019s)?\b")
-NUM = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+
+# --- pronunciation lists: global, then the text's own ---
+PRON = {"de": [], "la": {}, "respell": {}, "section_refs": True}
+for f in (pathlib.Path(__file__).parent / "pronunciations.json", md_path.parent / "pronunciations.json"):
+    if f.exists():
+        d = json.loads(f.read_text(encoding="utf-8"))
+        PRON["de"] += d.get("de", []) + d.get("german", [])
+        la = d.get("la", {})                    # list of terms, or {term: spelling with macrons}
+        PRON["la"].update(la if isinstance(la, dict) else {w: w for w in la})
+        PRON["respell"].update(d.get("respell", {}))
+        PRON["section_refs"] = d.get("section_refs", PRON["section_refs"])
+LANG = {w: "de" for w in PRON["de"]} | {w: "la" for w in PRON["la"]}
+SPELL = dict(PRON["la"])                        # what the Latin rules actually read: vowel lengths fix stress
+FOREIGN = re.compile(r"(?<![\w-])(" + "|".join(map(re.escape, sorted(LANG, key=len, reverse=True))) + r")(['’]s)?(?![\w-])") if LANG else None
+
+# --- numbers ---
+ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+ORD = {1: "first", 2: "second", 3: "third", 4: "fourth", 5: "fifth", 6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth", 10: "tenth",
+       11: "eleventh", 12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth", 16: "sixteenth", 17: "seventeenth",
+       18: "eighteenth", 19: "nineteenth", 20: "twentieth"}
+DECADE = {0: "hundreds", 10: "tens", 20: "twenties", 30: "thirties", 40: "forties", 50: "fifties", 60: "sixties", 70: "seventies",
+          80: "eighties", 90: "nineties"}
 
 
-def num(n):
-    return NUM[n] if n < 10 else str(n)
+def words(n):                                   # 0-99
+    return ONES[n] if n < 20 else TENS[n // 10] + ("-" + ONES[n % 10] if n % 10 else "")
+
+
+def ordinal(n):
+    return ORD[n] if n in ORD else TENS[n // 10] + "-" + ORD[n % 10] if n % 10 else TENS[n // 10][:-1] + "ieth"
+
+
+def roman(s):
+    v = {"I": 1, "V": 5, "X": 10, "L": 50}
+    return sum(-v[c] if i + 1 < len(s) and v[c] < v[s[i + 1]] else v[c] for i, c in enumerate(s))
+
+
+def year(n):                                    # 1000-2099 as spoken years
+    hi, lo = divmod(n, 100)
+    if 2000 <= n < 2010 or n == 1000:
+        return None                             # "two thousand and five", "one thousand": the engine says these well
+    if lo == 0:
+        return f"{words(hi)} hundred"
+    return f"{words(hi)} {'oh ' + ONES[lo] if lo < 10 else words(lo)}"
+
+
+NUM = ONES[:10]
+CARD_BEFORE = r"(?:Parts?|Vatican|Books?|Doctrine|Annex|War|Phase|Volume|Chapters?)"
+I_NAMES = {"Theodosius", "Gregory", "Nicholas", "Constantine", "Innocent", "Celestine", "Leo", "Clovis", "Niketas", "Athenagoras",
+           "Alexius", "Richard", "João", "Afonso", "Charles", "Henry", "Edward", "Elizabeth", "Mary", "James", "Francis", "Frederick"}
+RN = r"(?:XX|X)?(?:IX|IV|V?I{1,3}|V|X)"
+BOOKS = r"(Corinthians|Peter|John|Timothy|Thessalonians|Kings|Samuel|Chronicles|Maccabees|Enoch|Clement)"
+
+
+def regnal(m):
+    name, num = m[1], m[2]
+    if num == "I" and name not in I_NAMES:
+        return m[0]
+    return f"{name} the {ordinal(roman(num)).capitalize()}"
 
 
 def speakable(s):
     s = re.sub(r"\*+|_(?=\w)|(?<=\w)_", "", s)                         # emphasis markers
     s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)                     # links
-    s = re.sub(r"\b([1-9])\.(\d{1,2})\b",                               # section cross-references
-              lambda m: f"section {NUM[int(m[1])]} point {num(int(m[2]))}", s)
+    if PRON["section_refs"]:
+        s = re.sub(r"\b([1-9])\.(\d{1,2})\b", lambda m: f"section {NUM[int(m[1])]} point {words(int(m[2]))}", s)
+    s = re.sub(r"\b(\d+):(\d+)[–-](\d+):(\d+)\b", r"chapter \1, verse \2, to chapter \3, verse \4", s)   # John 7:53–8:11
+    s = re.sub(r"\b(\d+):(\d+)[–-](\d+)\b", r"chapter \1, verses \2 to \3", s)
+    s = re.sub(r"\b(\d+):(\d+)\b", r"chapter \1, verse \2", s)
+    s = re.sub(rf"\b([123]) {BOOKS}\b", lambda m: f"{ORD[int(m[1])].capitalize()} {m[2]}", s)
     s = re.sub(r"\((\d{4})\)", r", \1,", s)                             # (1845) -> , 1845,
-    s = re.sub(r"(\d{4})[–—-](\d{2})\b", r"\1 to \2", s)      # 1936-38
-    s = re.sub(r"(\d{4})[–-](\d{4})", r"\1 to \2", s)
+    s = re.sub(r"\bc\. ?(?=\d)", "circa ", s)
+    s = re.sub(r"(\d)\s?[–—-]\s?(\d)", r"\1 to \2", s)                  # ranges: 1936–38, 93–94, 354–430
+    s = re.sub(r"\b(1\d|20)(\d)0s\b", lambda m: "two thousands" if m[1] + m[2] == "200" else
+               f"{words(int(m[1]))} {DECADE[int(m[2]) * 10]}", s)
+    s = re.sub(r"(?<![\d,.£$])\b(1\d{3}|20\d\d)\b(?!\d|,\d)", lambda m: year(int(m[1])) or m[1], s)
+    s = re.sub(rf"\b({CARD_BEFORE}) ({RN})(\s?[–-]\s?| to | through | and | or )({RN})\b",          # Parts V–VI, Books II through IV
+               lambda m: f"{m[1]} {words(roman(m[2]))} {'to' if '–' in m[3] or '-' in m[3] else m[3].strip()} {words(roman(m[4]))}", s)
+    s = re.sub(rf"\b({CARD_BEFORE}) ({RN})\b(?=['’]s\b|[^\w'’]|$)", lambda m: f"{m[1]} {words(roman(m[2]))}", s)
+    s = re.sub(rf"\b([A-Z][a-zà-ÿ]+) ({RN})\b(?=['’]s\b|[^\w'’-]|$)", regnal, s)
+    s = re.sub(r"\bBCE\b", "B C E", s)
+    s = re.sub(r"\bCE\b", "C E", s)
+    s = re.sub(r"\bAD\b", "A D", s)
+    s = s.replace(" / ", ", ")
     for word, respell in PRON["respell"].items():
         s = re.sub(rf"\b{re.escape(word)}\b", respell, s)
     return s.replace("’", "'").replace("“", '"').replace("”", '"').strip()
 
 
-def synth(k, text):
-    """Render one sentence. Names listed under "german" get German sound rules, the rest British English,
+k = Kokoro(f"{model_dir}/kokoro-v1.0.onnx", f"{model_dir}/voices-v1.0.bin")
+FIX = {"de": {"ʏ": "y"}}                        # sounds the voice lacks: short ü would otherwise be dropped
+
+
+def phon(text, lang):
+    p = phonemizer.phonemize(text, lang, preserve_punctuation=True, with_stress=True)
+    for a, b in FIX.get(lang, {}).items():
+        p = p.replace(a, b)
+    return "".join(c for c in p if c in k.tokenizer.vocab).strip()
+
+
+def synth(text):
+    """Render one sentence. Listed words get German or Latin sound rules, the rest British English,
     joined at phoneme level so the sentence keeps one intonation line."""
-    if not GERMAN.search(text):
-        return k.create(text, voice=voice, speed=1.0, lang="en-gb")
     ph, pos = [], 0
-    for m in GERMAN.finditer(text):
+    for m in (FOREIGN.finditer(text) if FOREIGN else []):
         if text[pos:m.start()].strip():
-            ph.append(k.tokenizer.phonemize(text[pos:m.start()], "en-gb"))
-        ph.append(k.tokenizer.phonemize(m.group(1), "de") + ("s" if m.group(2) else ""))
+            ph.append(phon(text[pos:m.start()], "en-gb"))
+        ph.append(phon(SPELL.get(m[1], m[1]), LANG[m[1]]) + ("s" if m[2] else ""))
         pos = m.end()
     if text[pos:].strip():
-        ph.append(k.tokenizer.phonemize(text[pos:], "en-gb"))
-    phonemes = " ".join(ph)
-    if len(phonemes) > 500:                       # too long for one pass: fall back to plain English
-        return k.create(text, voice=voice, speed=1.0, lang="en-gb")
-    return k.create(phonemes, voice=voice, speed=1.0, lang="en-gb", is_phonemes=True)
+        ph.append(phon(text[pos:], "en-gb"))
+    return k.create(" ".join(ph), voice=voice, speed=1.0, lang="en-gb", is_phonemes=True)
 
 
 def sentences(p):
-    return [x for x in re.split(r"(?<=[.!?])\s+(?=[A-Z“\"(])", p) if x.strip()]
+    p = re.sub(r"\b(St|Dr|Mt|Mr|Fr)\. ", r"\1 ", p)
+    p = p.replace("e.g. ", "for example, ").replace("i.e. ", "that is, ").replace("cf. ", "compare ")
+    return [x for x in re.split(r"(?<=[.!?])(?<!\b[A-Z]\.)\s+(?=[A-Z“\"(])", p) if x.strip()]
 
 
-# --- parse the chapter into (section title, [paragraphs]) ---
-sections, cur = [], None
+# --- parse the chapter into (section title, spoken heading, [paragraphs]) ---
+sections, cur, part = [], None, None
 for line in md_path.read_text(encoding="utf-8").splitlines():
-    if line.startswith("# "):
-        title = re.sub(r"^# Chapter (\d+)\s*[—-]+\s*", r"Chapter \1. ", line[2:]).strip()
-        sections.append({"title": title, "spoken": title, "paras": [], "skip": False}); cur = sections[-1]
+    if line.startswith("# Part "):
+        part = re.sub(r"\s*—\s*", ". ", line[2:].strip()) + "."
+    elif line.startswith("# "):
+        title = line[2:].strip()
+        spoken = re.sub(r"^Chapter (\d+)\s*[—-]+\s*", r"Chapter \1. ", title)
+        spoken = re.sub(r"\s+—\s+", ". ", spoken)
+        title = re.sub(r"^Chapter (\d+)\s*[—-]+\s*", r"Chapter \1. ", title)
+        sections.append({"title": title, "spoken": spoken, "pre": part, "paras": [], "skip": False}); cur = sections[-1]; part = None
     elif line.startswith("## "):
         t = line[3:].strip(); m = re.match(r"(\d+)\.(\d+)\s+(.*)", t)
-        spoken = f"Section {NUM[int(m[1])]} point {num(int(m[2]))}. {m[3]}." if m else t
-        sections.append({"title": t, "spoken": spoken, "paras": [], "skip": bool(SKIP.search(t))}); cur = sections[-1]
+        spoken = f"Section {NUM[int(m[1])]} point {words(int(m[2]))}. {m[3]}." if m else t
+        sections.append({"title": t, "spoken": spoken, "pre": None, "paras": [], "skip": bool(SKIP.search(t))}); cur = sections[-1]
     elif line.strip() and cur is not None:
         text = re.sub(r"^\s*[-*]\s+|^>\s*", "", line).strip()
         if text:
             cur["paras"].append(text)
 
-k = Kokoro(f"{model_dir}/kokoro-v1.0.onnx", f"{model_dir}/voices-v1.0.bin")
 gap = lambda s: np.zeros(int(s * SR), np.float32)
 chunks, t, timings, marks = [], 0.0, [], []
 t0 = time.time()
@@ -78,10 +163,11 @@ for si, sec in enumerate(sections):
     if sec["skip"]:
         continue
     marks.append((sec["title"], t))
-    todo = [(sec["spoken"], 1.0)] + [(p, 0.7) for p in sec["paras"]]
+    todo = ([(sec["pre"], 1.0)] if sec["pre"] else []) + [(sec["spoken"], 1.0)] + [(p, 0.7) for p in sec["paras"]]
+    n_head = len(todo) - len(sec["paras"])
     for ti, (text, pause_after) in enumerate(todo):
-        for sj, sent in enumerate(sentences(text) if ti else [text]):
-            a, sr = synth(k, speakable(sent))
+        for sj, sent in enumerate(sentences(text) if ti >= n_head else [text]):
+            a, sr = synth(speakable(sent))
             timings.append([si, ti, sj, round(t, 2), round(t + len(a) / SR, 2)])
             chunks.append(a.astype(np.float32)); t += len(a) / SR
             chunks.append(gap(0.25)); t += 0.25
@@ -96,6 +182,7 @@ ends = [m[1] for m in marks[1:]] + [t]
 with open(meta, "w", encoding="utf-8") as f:
     f.write(";FFMETADATA1\n")
     for (title, start), end in zip(marks, ends):
+        title = title.replace("=", "\\=").replace(";", "\\;").replace("#", "\\#")
         f.write(f"[CHAPTER]\nTIMEBASE=1/1000\nSTART={int(start * 1000)}\nEND={int(end * 1000)}\ntitle={title}\n")
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-i", str(meta), "-map_metadata", "1",
                 "-ac", "1", "-c:a", "aac", "-b:a", "48k", "-movflags", "+faststart", str(m4a)], check=True)
