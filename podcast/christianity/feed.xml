@@ -301,5 +301,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>25. Avignon, Schism, and the Conciliar Crisis</title>
+<description>The Road to Avignon: Boniface VIII and the Overreach of Papal Power; Avignon: The Captive Papacy?; The Great Western Schism: Three Popes and a Broken Church; The Conciliar Movement: A Constitutional Theory of Church Governance; Jan Hus and the Council's Moral Failure; The Conciliar Movement's Defeat and Its Consequences.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch25.m4a" length="6741552" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch25</guid>
+<pubDate>Wed, 07 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:17:37</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>25</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
