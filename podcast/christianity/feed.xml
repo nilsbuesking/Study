@@ -181,5 +181,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>15. Global Spread, Phase One: Byzantium, Armenia, Ethiopia, and the Church of the East to China</title>
+<description>Christianity as a Multipolar Phenomenon; Byzantium: The Christian Empire of the East; Armenia: The First Christian Nation; Ethiopia: Christianity in the Kingdom of Aksum; The Church of the East: Christianity Beyond Rome; The Significance of This Diversity.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch15.m4a" length="8512008" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch15</guid>
+<pubDate>Mon, 05 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:22:17</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>15</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
