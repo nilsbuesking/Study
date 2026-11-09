@@ -481,5 +481,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>40. Reckoning: The Abuse Crisis, Secularisation, and Christianity's Global Picture Today</title>
+<description>The Abuse Crisis: Institutional Failure and Its Roots; The Institutional Logic and the Theological Cost; Secularisation: The European Story and Its Limits; American Evangelical Christianity and the Political Turn; Women in the Catholic Church: Ordination, Equality, and the Legal Tension; Christianity's Global Picture: A Stocktaking.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch40.m4a" length="8948066" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch40</guid>
+<pubDate>Sun, 11 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:23:25</itunes:duration>
+<itunes:season>8</itunes:season>
+<itunes:episode>40</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
