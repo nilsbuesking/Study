@@ -277,5 +277,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>23. Scholasticism: Aquinas and the Marriage of Faith and Reason</title>
+<description>The Institutional Revolution: The Rise of the Universities; The Recovery of Aristotle and Its Consequences; Thomas Aquinas: The Synthesis; The Condemnations of 1277 and the Limits of Synthesis.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch23.m4a" length="6305041" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch23</guid>
+<pubDate>Wed, 07 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:16:28</itunes:duration>
+<itunes:season>5</itunes:season>
+<itunes:episode>23</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
