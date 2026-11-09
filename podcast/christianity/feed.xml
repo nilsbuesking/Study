@@ -217,5 +217,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>18. Iconoclasm and the Byzantine Crisis</title>
+<description>Images and Their Contested Place in Christian Devotion; The Origins of Imperial Iconoclasm; The Course of the Controversy; Monasticism, Resistance, and the Reconfiguration of Authority; Iconoclasm and the Estrangement of Rome.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch18.m4a" length="6176486" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch18</guid>
+<pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:16:09</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>18</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
