@@ -349,5 +349,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>29. Calvin, Zwingli, and the Reformed Tradition</title>
+<description>Zwingli: The Swiss Reformation and Its Distinct Character; The Marburg Colloquy and the Eucharistic Division; John Calvin: Theology and Institution; Geneva as Laboratory: Discipline, Consistory, and Christian Society; The International Spread of Calvinism.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch29.m4a" length="6367196" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch29</guid>
+<pubDate>Thu, 08 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:16:43</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>29</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
