@@ -409,5 +409,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>34. Mission and Empire: Christianity in the Americas, Africa, and Asia</title>
+<description>The Inseparability of Mission and Empire; The Americas: Conquest, Conversion, and Catastrophe; Africa: Coastal Mission, Slavery, and the Interior; Asia: Ricci, the Chinese Rites, and the Limits of Accommodation; The Structural Legacy.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch34.m4a" length="6998983" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch34</guid>
+<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:18:20</itunes:duration>
+<itunes:season>7</itunes:season>
+<itunes:episode>34</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
