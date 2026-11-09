@@ -253,5 +253,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>21. The Crusades: Origins, Aims, and the Sack of Constantinople</title>
+<description>What Were the Crusades?; The Background: Holy War, Pilgrimage, and the Devotional World; Urban II at Clermont, 1095: The Appeal and Its Ambiguities; The First Crusade and Jerusalem's Fall: 1096–1099; Bernard of Clairvaux: The Conscience of the Twelfth Century; Saladin, the Loss of Jerusalem, and the Later Crusades; The Anti-Jewish Violence of the Crusades; The Crusades in Historical Perspective.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch21.m4a" length="8943377" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch21</guid>
+<pubDate>Tue, 06 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:23:22</itunes:duration>
+<itunes:season>5</itunes:season>
+<itunes:episode>21</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
