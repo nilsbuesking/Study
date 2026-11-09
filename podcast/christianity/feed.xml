@@ -13,5 +13,17 @@
 <itunes:image href="https://nilsbuesking.github.io/Study/podcast/christianity/cover.jpg"/>
 <itunes:category text="History"/>
 <itunes:subtitle>From the Second Temple to the Present</itunes:subtitle>
+<item>
+<title>1. Second Temple Judaism and the Historical Jesus: What Can Be Known</title>
+<description>The Problem of Sources; Methods and Their Limits; Second Temple Judaism: The World Jesus Inhabited; Jesus of Nazareth: A Sketch Within the Evidence.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch01.m4a" length="7472891" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch01</guid>
+<pubDate>Thu, 01 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:19:32</itunes:duration>
+<itunes:season>1</itunes:season>
+<itunes:episode>1</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
