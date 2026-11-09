@@ -157,5 +157,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>13. Nestorius, Cyril, and the Christological Wars: The Road to Ephesus</title>
+<description>Two Schools and Their Different Instincts; Nestorius: The Man and the Controversy; Cyril of Alexandria: Theology and Power; The Council of Ephesus, 431: Procedure as Weapon; The Theological Residue of Ephesus.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch13.m4a" length="6014081" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch13</guid>
+<pubDate>Sun, 04 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:15:44</itunes:duration>
+<itunes:season>3</itunes:season>
+<itunes:episode>13</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
