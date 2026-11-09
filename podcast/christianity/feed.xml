@@ -37,5 +37,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>3. Persecution, Apologetics, and the Church Within the Roman Empire</title>
+<description>A Movement Without Legal Standing; The Pattern of Persecution: Local, Sporadic, and Later Systematic; The Apologists: Defending the Faith to a Hostile World; Institutional Consolidation Under Pressure; The Martyr's Grave and the Origins of the Cult of Saints.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch03.m4a" length="9041035" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch03</guid>
+<pubDate>Fri, 02 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:23:33</itunes:duration>
+<itunes:season>1</itunes:season>
+<itunes:episode>3</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
