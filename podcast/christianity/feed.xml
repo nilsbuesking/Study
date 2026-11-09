@@ -313,5 +313,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>26. Heresy Before Luther: Wycliffe, Hus, and the Limits of Dissent</title>
+<description>Why These Movements Matter; John Wycliffe: Scripture, Dominion, and the Attack on the Church; Jan Hus: Bohemia and the Politicisation of Reform; Why the Limits Held — And Why They Would Not Hold for Luther.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch26.m4a" length="5886019" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch26</guid>
+<pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:15:27</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>26</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
