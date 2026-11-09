@@ -241,5 +241,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>20. Gregorian Reform and the Investiture Controversy: Church versus Empire</title>
+<description>The Problem of a Church Embedded in Feudal Power; Cluny and the Monastic Origins of Reform; Leo IX and the Reform Papacy; Gregory VII: The Theology of Reform; The Investiture Contest: Henry IV and the Road to Canossa; The Longer Consequences.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch20.m4a" length="6522218" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch20</guid>
+<pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:17:08</itunes:duration>
+<itunes:season>5</itunes:season>
+<itunes:episode>20</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
