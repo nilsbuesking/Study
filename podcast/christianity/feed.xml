@@ -25,5 +25,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>2. Paul, the Gentile Mission, and the Earliest Communities</title>
+<description>The Earliest Jerusalem Community; Saul of Tarsus; The Gentile Mission and Its Theological Logic; The Shape of the Pauline Mission.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch02.m4a" length="5659276" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:14:46</itunes:duration>
+<itunes:season>1</itunes:season>
+<itunes:episode>2</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
