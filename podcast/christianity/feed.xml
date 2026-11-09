@@ -325,5 +325,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>27. Luther, the Ninety-Five Theses, and the Theological Break</title>
+<description>The Man and His Formation; The Indulgence Controversy and the Ninety-Five Theses; The Theological Core: Justification by Faith Alone; Sola Scriptura and the Bondage of the Will; The Diet of Worms and the Point of No Return; Luther and the Jews: The Threading Commitment.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch27.m4a" length="7984006" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch27</guid>
+<pubDate>Thu, 08 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:20:53</itunes:duration>
+<itunes:season>6</itunes:season>
+<itunes:episode>27</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
