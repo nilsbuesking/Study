@@ -61,5 +61,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>5. Core Doctrine I: God, Trinity, Incarnation, and Salvation</title>
+<description>Monotheism Under Pressure: The Problem the Doctrine of the Trinity Solves; The Vocabulary of Trinitarian Definition; The Incarnation: God Become Human; Soteriology: How Does Christ's Death and Resurrection Save?.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch05.m4a" length="4970141" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch05</guid>
+<pubDate>Fri, 02 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:13:00</itunes:duration>
+<itunes:season>2</itunes:season>
+<itunes:episode>5</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
