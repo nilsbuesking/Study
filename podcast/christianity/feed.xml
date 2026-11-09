@@ -145,5 +145,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>12. Augustine versus Pelagius: Grace, Free Will, and a Political Church</title>
+<description>Augustine of Hippo: The Mind Behind the Controversy; The Question of Free Will: Setting Up the Problem; Pelagius: The Position and Its Appeal; Augustine's Response: Grace, Predestination, and the Bound Will; The Political Dimension: From Theological Dispute to Imperial Condemnation; The Augustinian Legacy and Its Ambivalence.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch12.m4a" length="8907729" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch12</guid>
+<pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:23:17</itunes:duration>
+<itunes:season>3</itunes:season>
+<itunes:episode>12</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
