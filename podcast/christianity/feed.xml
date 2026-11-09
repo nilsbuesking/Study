@@ -205,5 +205,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>17. Conversion of the North: Franks, Anglo-Saxons, and the Carolingian Church</title>
+<description>Conversion as Political Event; Clovis and the Frankish Conversion; Ireland and the Peregrini: Monasticism as Mission; The Anglo-Saxon Mission and the Roman Model; Charlemagne and the Carolingian Church.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch17.m4a" length="6907821" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch17</guid>
+<pubDate>Mon, 05 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:18:03</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>17</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
