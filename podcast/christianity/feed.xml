@@ -515,5 +515,16 @@
 <itunes:episodeType>bonus</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>Annex C, part two: Christian Holidays — the Christmas Cycle and Other Feasts</title>
+<description>The fixed feasts: Advent, St Nicholas, Christmas, Epiphany, Candlemas, the Assumption, All Saints and All Souls, Christ the King; and a note on denominational variation.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/annex-c2.m4a" length="8210050" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-annex-c2</guid>
+<pubDate>Mon, 12 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:21:34</itunes:duration>
+<itunes:season>9</itunes:season>
+<itunes:episodeType>bonus</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
