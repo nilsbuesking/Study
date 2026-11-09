@@ -109,5 +109,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>9. Gnosticism, Marcion, and the Definition of Orthodoxy</title>
+<description>The Problem of Naming; The Nag Hammadi Library and What It Changed; Marcion: A Distinct Case; Irenaeus and the Construction of Orthodoxy; The Limits of Repression and the Persistence of Gnosis.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch09.m4a" length="7441062" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch09</guid>
+<pubDate>Sat, 03 Oct 2026 18:00:00 +0000</pubDate>
+<itunes:duration>00:19:28</itunes:duration>
+<itunes:season>3</itunes:season>
+<itunes:episode>9</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
