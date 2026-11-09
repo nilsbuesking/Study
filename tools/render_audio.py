@@ -5,29 +5,35 @@ Model files: kokoro-v1.0.onnx and voices-v1.0.bin in <model_dir>
 
 Markdown: "# Part …" lines are announced before the next heading; "# X — Y" is spoken "X. Y";
 "## 1.2 Title" is spoken "Section one point two. Title."; other "##" headings are spoken as they stand.
-Spoken-text rules live in speakable(). Words that need another language's sound rules are listed in
+Spoken-text rules live in speakable(). Words that need other sound rules are listed in
 tools/pronunciations.json plus an optional pronunciations.json next to the chapter: "de" (or "german")
-for German, "la" for Classical Latin; "respell" maps words to English respellings."""
+for German; "la" for Classical Latin ({term: spelling with macrons}), read at "la_speed";
+"ipa" for exact phonemes ({term: Kokoro IPA}); "respell" maps words to English respellings.
+Needs the onnx package once, to make a copy of the model that accepts a speed per phoneme."""
 import json, os, pathlib, re, subprocess, sys, time
-import numpy as np, soundfile as sf, phonemizer
+import numpy as np, soundfile as sf, phonemizer, onnxruntime as ort
 from kokoro_onnx import Kokoro
+from kokoro_onnx.trim import trim as trim_audio
 
 md_path, out_dir, model_dir = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
 voice = sys.argv[4] if len(sys.argv) > 4 else "bf_isabella"
 SR, SKIP = 24000, re.compile(r"further reading|glossary", re.I)
 
 # --- pronunciation lists: global, then the text's own ---
-PRON = {"de": [], "la": {}, "respell": {}, "section_refs": True}
+PRON = {"de": [], "la": {}, "ipa": {}, "respell": {}, "section_refs": True, "la_speed": 1.0}
 for f in (pathlib.Path(__file__).parent / "pronunciations.json", md_path.parent / "pronunciations.json"):
     if f.exists():
         d = json.loads(f.read_text(encoding="utf-8"))
         PRON["de"] += d.get("de", []) + d.get("german", [])
         la = d.get("la", {})                    # list of terms, or {term: spelling with macrons}
         PRON["la"].update(la if isinstance(la, dict) else {w: w for w in la})
+        PRON["ipa"].update(d.get("ipa", {}))
         PRON["respell"].update(d.get("respell", {}))
-        PRON["section_refs"] = d.get("section_refs", PRON["section_refs"])
-LANG = {w: "de" for w in PRON["de"]} | {w: "la" for w in PRON["la"]}
+        for key in ("section_refs", "la_speed"):
+            PRON[key] = d.get(key, PRON[key])
+LANG = {w: "de" for w in PRON["de"]} | {w: "la" for w in PRON["la"]} | {w: "ipa" for w in PRON["ipa"]}
 SPELL = dict(PRON["la"])                        # what the Latin rules actually read: vowel lengths fix stress
+SPEED = {"la": PRON["la_speed"]}                # per-language speaking rate (1.0 = normal; lower is slower)
 FOREIGN = re.compile(r"(?<![\w-])(" + "|".join(map(re.escape, sorted(LANG, key=len, reverse=True))) + r")(['’]s)?(?![\w-])") if LANG else None
 
 # --- numbers ---
@@ -106,28 +112,62 @@ def speakable(s):
 
 
 k = Kokoro(f"{model_dir}/kokoro-v1.0.onnx", f"{model_dir}/voices-v1.0.bin")
+VAR = pathlib.Path(model_dir) / "kokoro-v1.0-varspeed.onnx"
+if not VAR.exists():                            # same model, but its speed input takes one value per phoneme
+    import onnx
+    m = onnx.load(f"{model_dir}/kokoro-v1.0.onnx")
+    next(i for i in m.graph.input if i.name == "speed").type.tensor_type.shape.dim[0].dim_param = "n_speed"
+    onnx.save(m, str(VAR))
+sess = ort.InferenceSession(str(VAR), providers=["CPUExecutionProvider"])
+STYLE = k.get_voice_style(voice)
+VOCAB = k.tokenizer.vocab
 FIX = {"de": {"ʏ": "y"}}                        # sounds the voice lacks: short ü would otherwise be dropped
 
 
 def phon(text, lang):
+    if lang == "ipa":
+        return "".join(c for c in text if c in VOCAB)
     p = phonemizer.phonemize(text, lang, preserve_punctuation=True, with_stress=True)
     for a, b in FIX.get(lang, {}).items():
         p = p.replace(a, b)
-    return "".join(c for c in p if c in k.tokenizer.vocab).strip()
+    return "".join(c for c in p if c in VOCAB).strip()
+
+
+def infer(ph, sp):
+    """One model pass over phonemes ph with a speaking rate per phoneme sp; silence trimmed as Kokoro does."""
+    tok = [VOCAB[c] for c in ph]
+    audio = sess.run(None, {"tokens": np.array([[0, *tok, 0]], dtype=np.int64),
+                            "style": STYLE[min(len(tok), len(STYLE)) - 1].astype(np.float32),
+                            "speed": np.array([1.0, *sp, 1.0], dtype=np.float32)})[0].ravel()
+    return trim_audio(audio)[0]
 
 
 def synth(text):
-    """Render one sentence. Listed words get German or Latin sound rules, the rest British English,
-    joined at phoneme level so the sentence keeps one intonation line."""
-    ph, pos = [], 0
+    """Render one sentence. Listed words get German, Latin or exact phonemes, the rest British English,
+    joined at phoneme level so the sentence keeps one intonation line; Latin can be spoken more slowly."""
+    segs, pos = [], 0
     for m in (FOREIGN.finditer(text) if FOREIGN else []):
         if text[pos:m.start()].strip():
-            ph.append(phon(text[pos:m.start()], "en-gb"))
-        ph.append(phon(SPELL.get(m[1], m[1]), LANG[m[1]]) + ("s" if m[2] else ""))
+            segs.append((phon(text[pos:m.start()], "en-gb"), 1.0))
+        lang = LANG[m[1]]
+        segs.append((phon(SPELL.get(m[1], m[1]), lang) + ("s" if m[2] else ""), SPEED.get(lang, 1.0)))
         pos = m.end()
     if text[pos:].strip():
-        ph.append(phon(text[pos:], "en-gb"))
-    return k.create(" ".join(ph), voice=voice, speed=1.0, lang="en-gb", is_phonemes=True)
+        segs.append((phon(text[pos:], "en-gb"), 1.0))
+    ph, sp = "", []
+    for s, rate in segs:
+        if ph:
+            ph += " "; sp.append(1.0)
+        ph += s; sp += [rate] * len(s)
+    parts = []
+    while len(ph) > 510:                        # the model's limit: split at the last pause mark, else the last space
+        cut = max((ph.rfind(c, 0, 510) for c in ",;:—"), default=-1)
+        cut = cut + 1 if cut > 100 else ph.rfind(" ", 0, 510) + 1 or 510
+        parts.append(infer(ph[:cut].rstrip(), sp[:len(ph[:cut].rstrip())]))
+        parts.append(np.zeros(int(0.1 * SR), np.float32))
+        ph, sp = ph[cut:].lstrip(), sp[cut + (len(ph[cut:]) - len(ph[cut:].lstrip())):]
+    parts.append(infer(ph, sp))
+    return np.concatenate(parts), SR
 
 
 def sentences(p):

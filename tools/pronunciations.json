@@ -1,23 +1,32 @@
 {
-  "_note": "german: names read with German sound rules inside an English sentence (checked by ear for Isabella: all seven test names good). respell: plain word replacements for anything else.",
-  "german": [
-    "Friedrich",
-    "Engels",
-    "Zinoviev",
-    "Bukharin",
-    "Grigori",
-    "Fraassen",
-    "Bismarck",
-    "Ranke",
-    "Burckhardt",
-    "Meinecke",
-    "Ginzburg",
-    "Paasche",
-    "Laspeyres",
-    "Sönke",
-    "Neitzel",
-    "Ziemann",
-    "Wolff"
-  ],
-  "respell": {}
+ "_note": "Applies to every text. german: names read with German sound rules. ipa: exact phonemes (Kokoro's British IPA). respell: English respellings. Each text can add its own pronunciations.json next to its chapters.",
+ "german": [
+  "Friedrich",
+  "Engels",
+  "Zinoviev",
+  "Bukharin",
+  "Grigori",
+  "Fraassen",
+  "Bismarck",
+  "Ranke",
+  "Burckhardt",
+  "Meinecke",
+  "Ginzburg",
+  "Paasche",
+  "Laspeyres",
+  "Sönke",
+  "Neitzel",
+  "Ziemann",
+  "Wolff",
+  "Luther"
+ ],
+ "ipa": {
+  "Lutheran": "lˈuːtəɹən",
+  "Lutherans": "lˈuːtəɹənz",
+  "Lutheranism": "lˈuːtəɹənˌɪzəm",
+  "Augustine": "ɔːɡˈʌstɪn",
+  "Constantine": "kˈɒnstəntˌaɪn",
+  "Charlemagne": "ʃˈɑːləmˌeɪn"
+ },
+ "respell": {}
 }
