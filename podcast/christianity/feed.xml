@@ -97,5 +97,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>8. Church, Hierarchy, and Authority: Bishops, Councils, and Apostolic Succession</title>
+<description>From Plural Leadership to Monepiscopacy; Apostolic Succession: The Theological Claim; Councils: Conciliar Authority and Its Theory; The Petrine Claim and the Question of Roman Primacy.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch08.m4a" length="5068305" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch08</guid>
+<pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
+<itunes:duration>00:13:15</itunes:duration>
+<itunes:season>2</itunes:season>
+<itunes:episode>8</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
