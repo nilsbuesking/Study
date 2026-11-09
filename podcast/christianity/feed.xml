@@ -421,5 +421,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>35. The Churches and Slavery: Complicity and Abolition</title>
+<description>The Scale of the Crime and the Church's Involvement; Institutional Entanglement: Churches as Slaveholders; The Abolition Movement: Christians as Agents of Change; The Theological Reckoning.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch35.m4a" length="4777278" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch35</guid>
+<pubDate>Sat, 10 Oct 2026 06:00:00 +0000</pubDate>
+<itunes:duration>00:12:31</itunes:duration>
+<itunes:season>7</itunes:season>
+<itunes:episode>35</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
