@@ -504,5 +504,16 @@
 <itunes:episodeType>bonus</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>Annex C, part one: Christian Holidays — the Easter Cycle</title>
+<description>Christian holidays in England, Ireland and Germany: the moveable feasts from Shrove Tuesday and Fastnacht to Pentecost, Trinity Sunday and Corpus Christi.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/annex-c1.m4a" length="8877644" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-annex-c1</guid>
+<pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:23:15</itunes:duration>
+<itunes:season>9</itunes:season>
+<itunes:episodeType>bonus</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
