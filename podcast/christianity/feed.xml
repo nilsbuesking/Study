@@ -169,5 +169,17 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 </item>
+<item>
+<title>14. Chalcedon and the Making of the Miaphysite Churches</title>
+<description>The Problem Ephesus Left Unsolved; Leo's Tome and the Western Position; The Council of Chalcedon, 451; The Miaphysite Rejection and the Permanent Schism.</description>
+<enclosure url="https://nilsbuesking.github.io/Study/podcast/christianity/audio/ch14.m4a" length="6168777" type="audio/x-m4a"/>
+<guid isPermaLink="false">christianity-ch14</guid>
+<pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+<itunes:duration>00:16:09</itunes:duration>
+<itunes:season>4</itunes:season>
+<itunes:episode>14</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:explicit>false</itunes:explicit>
+</item>
 </channel>
 </rss>
